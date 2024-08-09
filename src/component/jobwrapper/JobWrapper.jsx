@@ -1,10 +1,20 @@
 
-import { useEffect, useState } from 'react';
+// import { useEffect, useState } from 'react';
 import JobItem from '../jobitem/JobItem';
 import './JobWrapper.css'
 
 const JobWrapper = () => {
-const [jobs, setJobs] = useState([
+// const [jobs, setJobs] = useState([]);
+
+// useEffect(() => {
+//   function calljob() {
+//     fetch('http://localhost:3000/Job').then((response) => 
+//       response.json()).then((finalResult) => setJobs(finalResult))
+//   }
+//   calljob()
+// }, []);
+
+const jobs = [
 
   {
     "id": 1,
@@ -20,7 +30,7 @@ const [jobs, setJobs] = useState([
     "location": "USA Only",
     "languages": ["HTML", "CSS", "JavaScript"],
     "tools": []
-  },
+  },  
 
   {
     "id": 2,
@@ -38,7 +48,6 @@ const [jobs, setJobs] = useState([
     "tools": ["React"]
   },
 
-
   {
     "id": 3,
     "company": "Account",
@@ -54,8 +63,6 @@ const [jobs, setJobs] = useState([
     "languages": ["JavaScript"],
     "tools": ["React", "Sass"]
   },
-
-
 
   {
     "id": 4,
@@ -88,8 +95,6 @@ const [jobs, setJobs] = useState([
     "languages": ["JavaScript", "Ruby"],
     "tools": ["Sass"]
   },
-
-
   {
     "id": 6,
     "company": "FaceIt",
@@ -138,8 +143,6 @@ const [jobs, setJobs] = useState([
     "tools": ["Vue", "Sass"]
   },
 
-
-
   {
     "id": 9,
     "company": "Eyecam Co.",
@@ -155,8 +158,6 @@ const [jobs, setJobs] = useState([
     "languages": ["JavaScript", "Python"],
     "tools": ["Django"]
   },
-
-
   {
     "id": 10,
     "company": "The Air Filter Company",
@@ -173,25 +174,10 @@ const [jobs, setJobs] = useState([
     "tools": ["React", "Sass"]
   }
 
-
-
-]);
-
+]
 
 
 
-
-
-
-
-
-// useEffect(() => {
-//   function calljob() {
-//     fetch('http://localhost:3000/Job').then((response) => 
-//       response.json()).then((finalResult) => setJobs(finalResult))
-//   }
-//   calljob()
-// }, []);
 
 
 
